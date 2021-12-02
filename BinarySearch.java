@@ -2,9 +2,9 @@
 * This program generates 250 random numbers in an array
 * and allows the user to search the array for a number.
 *
-* @author  Mr Coxall
+* @author  Jonathan Pasco-Arnone
 * @version 0.5
-* @since   2020-09-01
+* @since   2021-12-02
 */
 
 import java.util.Random;
@@ -30,7 +30,7 @@ final class BinarySearch {
   /**
   * The number of elements in the array.
   */
-  public static final int ARRAY_SIZE = 250;
+  public static final int ARRAY_SIZE = 100;
 
   /**
   * Function finds the index of a number, using Binary Search recursively.
@@ -41,9 +41,14 @@ final class BinarySearch {
   * @param highIndex
   * @return binarySearch
   */
-  static int binarySearch(final int[] userArray, final int userNumber,
-                          final int lowIndex, final int highIndex) {
-    // solve this function!
+  static int binarySearch(final int[] userArray, final int userNumber) {
+      final returnValue;
+      if (userNumber == userArray[ceil((MIN + MAX) / 2)]) {
+          returnValue (userArray[ceil((MIN + MAX) / 2)]);
+      } else if (userInput > userArray[ceil((MIN + MAX) / 2)]) {
+          MIN = ceil((MIN + MAX) / 2);
+          returnValue = binarySearch(userArray, userNumber)
+      }
 
     return -1;
   }
