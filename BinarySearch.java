@@ -42,7 +42,7 @@ final class BinarySearch {
     * @return binarySearch
     */
     static int binarySearch(final int[] userArray, final int userNumber,
-        int lowIndex, int highIndex) {
+        final int lowIndex, final int highIndex) {
         // Variables.
         int newLowIndex = lowIndex;
         int newHighIndex = highIndex;
@@ -132,7 +132,7 @@ final class BinarySearch {
 
             // Ensuring the user inputs an appropriate integer
             if (searchNumber > max || searchNumber < min) {
-                throw new Exception();
+                throw new java.util.InputMismatchException();
             } else {
                 /*
                 * Using binary search to find the user's chosen number
@@ -141,7 +141,7 @@ final class BinarySearch {
                 final int searchResult = binarySearch(numberArray,
                     searchNumber, 0, numberArray.length - 1);
                 if (searchResult == -1) {
-                    throw new Exception();
+                    throw new java.util.InputMismatchException();
                 } else {
                     // Outputing the results of the search
                     System.out.println();
