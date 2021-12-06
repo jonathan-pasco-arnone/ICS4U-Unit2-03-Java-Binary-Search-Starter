@@ -51,8 +51,8 @@ final class BinarySearch {
 
         if (userNumber == userArray[(int) Math.ceil((double) (newLowIndex
             + newHighIndex) / 2)]) {
-            returnValue = userArray[(int) Math.ceil((double) (newLowIndex
-                + newHighIndex) / 2)];
+            returnValue = (int) Math.ceil((double) (newLowIndex
+                + newHighIndex) / 2);
         } else if (newLowIndex == newHighIndex) {
             returnValue = -1;
         } else if (userNumber > userArray[(int) Math.ceil((double)
